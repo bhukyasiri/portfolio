@@ -3,111 +3,331 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bhukya Siri Portfolio </title>
+<title>Bhukya Siri | Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 <style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
 body{
-font-family:Arial,sans-serif;
-max-width:900px;
-margin:auto;
-padding:20px;
-background:#f5f7fb;
-line-height:1.6;
+background:#0f172a;
+color:white;
 }
+
 header{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:30px;
-}
-section{
-background:white;
 padding:20px;
-margin:15px 0;
+background:linear-gradient(135deg,#0f172a,#1e293b);
+}
+
+header h1{
+font-size:4rem;
+margin-bottom:10px;
+animation:fadeUp 1s ease;
+}
+
+header p{
+font-size:1.2rem;
+color:#cbd5e1;
+animation:fadeUp 1.5s ease;
+}
+
+.btns{
+margin-top:30px;
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
 border-radius:10px;
-box-shadow:0 2px 8px rgba(0,0,0,0.1);
+text-decoration:none;
+font-weight:600;
+transition:.3s;
 }
-h2{
-color:#1f4fbf;
+
+.primary{
+background:#3b82f6;
+color:white;
 }
-ul{
-padding-left:20px;
+
+.primary:hover{
+transform:translateY(-3px);
 }
+
+.secondary{
+border:1px solid #3b82f6;
+color:#3b82f6;
+}
+
+.secondary:hover{
+background:#3b82f6;
+color:white;
+}
+
+section{
+padding:80px 10%;
+}
+
+.title{
+font-size:2rem;
+margin-bottom:30px;
+color:#60a5fa;
+}
+
+.card{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+margin-bottom:20px;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.skills{
+display:flex;
+flex-wrap:wrap;
+gap:12px;
+}
+
+.skill{
+background:#2563eb;
+padding:10px 18px;
+border-radius:25px;
+}
+
+.project-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.project{
+background:#1e293b;
+padding:25px;
+border-radius:15px;
+transition:.3s;
+}
+
+.project:hover{
+transform:translateY(-5px);
+}
+
+.project h3{
+margin-bottom:15px;
+color:#60a5fa;
+}
+
+.achievement-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.achievement{
+background:#1e293b;
+padding:20px;
+border-radius:15px;
+text-align:center;
+}
+
+footer{
+text-align:center;
+padding:40px;
+background:#020617;
+}
+
+.contact-btn{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:#2563eb;
+color:white;
+text-decoration:none;
+border-radius:10px;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(30px);
+}
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
 </style>
 </head>
+
 <body>
 
 <header>
+
 <h1>Bhukya Siri</h1>
-<p>Aspiring Software Engineer | Java | Data Structures & Algorithms | AI & ML</p>
+
+<p>
+Aspiring Software Engineer • Java • DSA • AI & ML
+</p>
+
+<div class="btns">
+<a href="https://github.com/bhukyasiri" class="btn primary">GitHub</a>
+<a href="#" class="btn secondary">LinkedIn</a>
+</div>
+
 </header>
 
 <section>
-<h2>About Me</h2>
+
+<h2 class="title">About Me</h2>
+
+<div class="card">
+I am a B.Tech student specializing in Computer Science & Engineering (AI & ML) at KITS Warangal. Passionate about software development, machine learning, and problem solving. Currently improving my Java, DSA, and development skills through projects and coding practice.
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Education</h2>
+
+<div class="card">
+<h3>B.Tech – CSE (AI & ML)</h3>
+<p>Kakatiya Institute of Technology & Science, Warangal</p>
+<p>2023 – 2027</p>
+<p>Current CGPA: 5.59</p>
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Skills</h2>
+
+<div class="skills">
+
+<div class="skill">Java</div>
+<div class="skill">Python</div>
+<div class="skill">C Programming</div>
+<div class="skill">SQL</div>
+<div class="skill">DSA</div>
+<div class="skill">Machine Learning</div>
+<div class="skill">OOP</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>❤️ Heart Disease Prediction</h3>
+
 <p>
-I am a B.Tech student specializing in Computer Science and Engineering (AI & ML) at KITS Warangal.
-I am passionate about software development, machine learning, and problem-solving.
+Predicts heart disease risk using machine learning algorithms and patient health parameters. Includes model comparison and real-time prediction using Streamlit.
 </p>
+
+</div>
+
+</div>
+
 </section>
 
 <section>
-<h2>Education</h2>
-<p>
-<strong>B.Tech – CSE (AI & ML)</strong><br>
-Kakatiya Institute of Technology & Science (KITS), Warangal<br>
-2023 – 2027
-</p>
+
+<h2 class="title">Certifications</h2>
+
+<div class="project-grid">
+
+<div class="project">
+<h3>Mastercard Cybersecurity Simulation</h3>
+<p>Completed practical cybersecurity awareness and phishing analysis tasks.</p>
+</div>
+
+<div class="project">
+<h3>Tata GenAI Data Analytics Simulation</h3>
+<p>Worked on AI-powered analytics and business insights generation.</p>
+</div>
+
+<div class="project">
+<h3>NCC 'C' Certificate</h3>
+<p>Successfully completed NCC training with a good grade.</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
-<h2>Skills</h2>
-<ul>
-<li>Java</li>
-<li>Python</li>
-<li>C Programming</li>
-<li>SQL</li>
-<li>Data Structures & Algorithms</li>
-<li>Object-Oriented Programming</li>
-<li>Machine Learning</li>
-</ul>
+
+<h2 class="title">Achievements</h2>
+
+<div class="achievement-grid">
+
+<div class="achievement">
+<h3>50+</h3>
+<p>LeetCode Problems Solved</p>
+</div>
+
+<div class="achievement">
+<h3>2026</h3>
+<p>Portfolio & GitHub Development</p>
+</div>
+
+<div class="achievement">
+<h3>AI & ML</h3>
+<p>Academic Specialization</p>
+</div>
+
+</div>
+
 </section>
 
 <section>
-<h2>Project</h2>
-<h3>Heart Disease Prediction Using Machine Learning</h3>
-<ul>
-<li>Predicts heart disease risk using machine learning techniques.</li>
-<li>Uses patient health parameters such as age, cholesterol, blood pressure and heart rate.</li>
-<li>Compares multiple ML models for improved accuracy.</li>
-<li>Provides real-time predictions using Streamlit.</li>
-</ul>
+
+<h2 class="title">Languages</h2>
+
+<div class="skills">
+
+<div class="skill">English</div>
+<div class="skill">Telugu</div>
+<div class="skill">Hindi</div>
+<div class="skill">Lambadi</div>
+
+</div>
+
 </section>
 
-<section>
-<h2>Certifications</h2>
-<ul>
-<li>NCC 'C' Certificate</li>
-<li>Mastercard Cybersecurity Job Simulation</li>
-<li>Tata GenAI Powered Data Analytics Job Simulation</li>
-</ul>
-</section>
+<footer>
 
-<section>
-<h2>Achievements</h2>
-<ul>
-<li>Solved 50+ LeetCode Problems</li>
-<li>Completed NCC 'C' Certificate with a good grade</li>
-</ul>
-</section>
+<h2>Let's Connect</h2>
 
-<section>
-<h2>Languages</h2>
-<p>Telugu, English, Hindi, Lambadi</p>
-</section>
+<a href="mailto:siribhukya583@gmail.com" class="contact-btn">Email</a>
 
-<section>
-<h2>Contact</h2>
-<p>Email: siribhukya583@gmail.com</p>
-<p>GitHub: github.com/bhukyasiri</p>
-<p>LinkedIn: linkedin.com/in/siri-bhukya</p>
-</section>
+<a href="https://github.com/bhukyasiri" class="contact-btn">GitHub</a>
+
+</footer>
 
 </body>
 </html>
